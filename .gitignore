@@ -15,7 +15,7 @@ states/
 .env.local
 .idea
 
-.broadcase
-.cache
-.out
+broadcast/
+cache/
+out/
 
