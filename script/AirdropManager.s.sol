@@ -6,7 +6,6 @@ import {Script, console } from "forge-std/Script.sol";
 import "@openzeppelin/contracts/proxy/transparent/ProxyAdmin.sol";
 import "@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol";
 
-import {Script, console} from "forge-std/Script.sol";
 import {AirdropManager} from "../src/AirdropManager.sol";
 import "../test/EmptyContract.sol";
 
@@ -32,7 +31,7 @@ contract AirdropManagerScript is Script {
 
         airdropManagerProxyAdmin = ProxyAdmin(getProxyAdminAddress(address(proxyAirdropManager)));
 
-        bytes32 merkleRoot = 0xb93102acab0012b7ecb60eaafb72a9cfa4872130eb983af14de6fae3f60f0188;
+        bytes32 merkleRoot = 0x7875e1a9672dcba8805d430efa935196c3c7a458e250cb535508985eb2f2df83;
 
         airdropManagerProxyAdmin.upgradeAndCall(
             ITransparentUpgradeableProxy(address(airdropManager)),
